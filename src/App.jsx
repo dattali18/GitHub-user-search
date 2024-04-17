@@ -1,15 +1,11 @@
 // react-router-dom
-import {
-  BrowserRouter,
-  Route,
-  Routes,
-} from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 // pages
+import Layout from "./components/layout/layout.jsx";
 import Favorites from "./pages/favorites/favorites.jsx";
 import Home from "./pages/home/home.jsx";
 import Search from "./pages/search/search.jsx";
-import Layout from "./components/layout/layout.jsx";
 // styles
 import "./App.css";
 

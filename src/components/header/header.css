@@ -31,7 +31,7 @@
 }
 
 .navbar-item a:hover {
-  color: var(--primary-color);
+  color: var(--blue);
 }
 
 .navbar-icon h1 {

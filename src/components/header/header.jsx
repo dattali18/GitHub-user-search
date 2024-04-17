@@ -1,7 +1,6 @@
 // Dependencies
 import "./header.css";
 // react router dom components
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
 export default function Header() {
@@ -9,8 +8,7 @@ export default function Header() {
     <header>
       <nav className="navbar">
         <div className="navbar-icon">
-          <FontAwesomeIcon icon="fa-brands fa-github-alt" />
-          <h1>Git Hub Search</h1>
+          <h1>GitHub Search</h1>
         </div>
         <ul className="navbar-list">
           <li className="navbar-item">

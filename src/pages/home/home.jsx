@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Link } from "react-router-dom";
 
 // Styles
@@ -6,8 +7,8 @@ import "./home.css";
 export default function Home() {
   return (
     <>
-      <h1 className="home-title">Home</h1>
       <div className="home-div">
+        <h1 className="home-title">Home</h1>
         <p className="home-paragraph">
           This app allows you to search for GitHub users. To use the app, simply
           enter the username of the GitHub user you want to search for in the
