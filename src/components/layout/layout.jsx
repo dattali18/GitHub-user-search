@@ -4,11 +4,16 @@ import { Outlet } from "react-router";
 // Components
 import Header from "../header/header.jsx";
 
+// Styles
+import "./layout.css";
+
 const Layout = () => {
   return (
     <>
-      <Header/>
-      <Outlet />
+      <Header />
+      <div className="main">
+        <Outlet />
+      </div>
     </>
   );
 };

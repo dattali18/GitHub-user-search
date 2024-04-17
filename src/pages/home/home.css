@@ -1,0 +1,30 @@
+.home-title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.home-paragraph {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.home-button {
+  font-size: 1.2em;
+  font-weight: 600;
+
+  padding: 0.7em 2em;
+
+  border: none;
+  border-radius: 50px;
+
+  background-color: var(--primary-color);
+
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.home-button:hover {
+  opacity: 0.9;
+}
