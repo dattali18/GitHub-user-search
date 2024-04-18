@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
@@ -9,21 +10,36 @@ import "./repos.css";
 
 const Repos = () => {
   const { ownerName } = useParams();
-  console.log(ownerName);
   const [repos, setRepos] = useState([]);
+  const [displayRepos, setDisplayRepos] = useState([]);
 
   useEffect(() => {
     // Fetch repos data based on ownerName
     fetchUserRepos(ownerName)
-      .then((data) => setRepos(data))
+      .then((data) => {
+        setRepos(data);
+        setDisplayRepos(data);
+      })
       .catch((error) => console.error(error));
   }, [ownerName]);
 
   return (
     <div>
       <h1>{ownerName}&apos;s Repo</h1>
+      <input
+        className="search-bar"
+        type="text"
+        placeholder="Search repos"
+        onChange={(e) => {
+          const searchTerm = e.target.value;
+          const filteredRepos = repos.filter((repo) =>
+            repo.name.toLowerCase().includes(searchTerm.toLowerCase())
+          );
+          setDisplayRepos(filteredRepos);
+        }}
+      />
       <div className="repo-grid">
-        {repos.map((repo) => (
+        {displayRepos.map((repo) => (
           <Repo
             key={repo.id}
             name={repo.name}

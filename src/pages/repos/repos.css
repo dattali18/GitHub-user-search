@@ -1,9 +1,30 @@
 .repo-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(
+    4,
+    1fr
+  ); /* Change the number of columns as needed */
+  gap: 1rem;
 
-    gap: 1rem;
-    
-    margin-top: 1rem;
+  margin-top: 1rem;
+}
+
+.search-bar {
+  min-width: 30em;
+  min-height: 3rem;
+
+  padding: 0 2em;
+  margin: 2rem 25%;
+
+  border: 1px solid var(--secondary-color);
+  border-radius: var(--border-radius);
+
+  background-color: var(--dark-bg-secondary);
+
+  color: var(--white);
+  font-size: 1.2rem;
+}
+
+.search-bar:focus {
+  outline: none;
 }

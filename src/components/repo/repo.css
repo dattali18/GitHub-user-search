@@ -13,9 +13,8 @@
   background-color: var(--dark-bg-secondary);
 
   padding: 1em;
-  /* margin: .5rem; */
 
-  max-width: 25%;
+  /* max-width: 25%; */
 }
 
 .repo-description {
