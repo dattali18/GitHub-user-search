@@ -1,7 +1,9 @@
+/* eslint-disable react/no-unescaped-entities */
 // Styles
 import "./search.css";
 
 // Api
+import { Link } from "react-router-dom";
 import { fetchUserProfile } from "../../api/githubApi.js";
 
 // React
@@ -82,13 +84,20 @@ function Search() {
         {isLoading ? (
           <p>Loading...</p>
         ) : userProfile ? (
-          <Card
-            name={userProfile.name}
-            avatar_url={userProfile.avatar_url}
-            created_since={new Date(userProfile.created_at).toLocaleDateString()}
-            public_repos={userProfile.public_repos}
-            followers={userProfile.followers}
-          />
+          <>
+            <Card
+              name={userProfile.name}
+              avatar_url={userProfile.avatar_url}
+              created_since={new Date(
+                userProfile.created_at
+              ).toLocaleDateString()}
+              public_repos={userProfile.public_repos}
+              followers={userProfile.followers}
+            />
+            <Link className="search-repo" to={"/repos/" + userProfile.login}>
+              {userProfile.name}'s Repositories
+            </Link>
+          </>
         ) : (
           <p>{errorMessage}</p>
         )}

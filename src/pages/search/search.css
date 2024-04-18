@@ -95,3 +95,15 @@
   background-color: #f5f5f5;
   border-radius: 4px;
 }
+
+.search-repo{
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+
+  color: var(--blue);
+}
+
+.search-repo:hover {
+  opacity: 0.8;
+}

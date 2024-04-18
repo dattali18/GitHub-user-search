@@ -1,0 +1,9 @@
+.repo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+
+    gap: 1rem;
+    
+    margin-top: 1rem;
+}

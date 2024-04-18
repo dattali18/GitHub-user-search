@@ -6,6 +6,8 @@ import Layout from "./components/layout/layout.jsx";
 import Favorites from "./pages/favorites/favorites.jsx";
 import Home from "./pages/home/home.jsx";
 import Search from "./pages/search/search.jsx";
+import Repos from "./pages/repos/repos.jsx";
+
 // styles
 import "./App.css";
 
@@ -17,6 +19,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="search" element={<Search />} />
           <Route path="favorites" element={<Favorites />} />
+          <Route path="repos/:ownerName" element={<Repos />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -1,0 +1,56 @@
+.repo {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start;
+
+  flex-wrap: nowrap;
+
+  gap: 1rem;
+
+  border-radius: 1rem;
+
+  background-color: var(--dark-bg-secondary);
+
+  padding: 1em;
+  /* margin: .5rem; */
+
+  max-width: 25%;
+}
+
+.repo-description {
+    font-size: 1rem;
+    color: var(--text-secondary);
+}
+
+.repo-link {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--blue);
+
+  text-decoration: none;
+}
+
+.repo-link:hover {
+  opacity: 0.8;
+}
+
+.repo-topics {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 0.5rem;
+
+  list-style: none;
+}
+
+.repo-topic-item {
+  padding: 0.3rem .8rem;
+  border-radius: 2rem;
+
+  font-size: .8rem;
+
+  color: var(--blue);
+  /* make the bg-color to be --blue + make opacity less */
+  background-color: rgba(3, 102, 214, 0.1);
+}

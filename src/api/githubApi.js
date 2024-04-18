@@ -17,11 +17,12 @@ export const fetchUserProfile = async (username) => {
 };
 
 export const fetchUserRepos = async (username) => {
-    try {
-        const response = await githubApi.get(`/users/${username}/repos`);
-        return response.data;
-    } catch (error) {
-        console.error("Error fetching user repos:", error);
-        throw error;
-    }
+  try {
+    const response = await githubApi.get(`/users/${username}/repos`);
+    return response.data;
+  } catch (error) {
+    console.error("Error fetching user repos:", error);
+    throw error;
+  }
 };
+
