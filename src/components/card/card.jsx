@@ -1,6 +1,8 @@
 // Styles
 import "./card.css";
 
+// Api
+
 import PropTypes from "prop-types";
 
 export default function Card({
@@ -17,7 +19,7 @@ export default function Card({
         <h1 className="card-name">{name}</h1>
       </div>
       <div className="card-info">
-        <p className="tag card-info-item">{created_since}</p>
+        <p className="tag card-info-item">Joined {created_since}</p>
         <p className="tag card-info-item">{public_repos} Public Repos</p>
         <p className="tag card-info-item">{followers} Followers</p>
       </div>
