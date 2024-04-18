@@ -20,6 +20,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  margin-bottom: 2rem;
 }
 
 /* Search input */
@@ -38,8 +40,8 @@
 
   color: var(--white);
 
-  font-family: 'Fira Code', monospace;
-  font-size: 1.2em;
+  font-family: monospace;
+  font-size: 1.1rem;
 }
 
 .search-input:focus {
