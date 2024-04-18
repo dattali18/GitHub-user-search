@@ -1,12 +1,28 @@
+.home {
+  /* make the height take 100% of the viewport */
+  min-height: 60vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .home-title {
   font-size: 2em;
   font-weight: bold;
-  margin-bottom: 1em;
+  /* margin-bottom: 1em; */
+}
+
+.home-legend {
+  font-size: 4em;
+  font-weight: 500;
+  /* margin-bottom: 1em; */
 }
 
 .home-paragraph {
-  font-size: 1.3em;
-  margin-bottom: 1em;
+  font-size: 1.7em;
+  /* margin-bottom: 1em; */
 }
 
 .home-button {
@@ -27,16 +43,4 @@
 
 .home-button:hover {
   opacity: 0.9;
-}
-
-.home-div {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: space-around;
-
-  /* make the height take 100% of the parent container */
-  height: 100%;
-
-  padding: 0 24%;
 }

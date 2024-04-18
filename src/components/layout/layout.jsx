@@ -2,6 +2,7 @@
 import { Outlet } from "react-router";
 
 // Components
+import Footer from "../footer/footer.jsx";
 import Header from "../header/header.jsx";
 
 // Styles
@@ -14,6 +15,7 @@ const Layout = () => {
       <div className="main">
         <Outlet />
       </div>
+      <Footer />
     </>
   );
 };

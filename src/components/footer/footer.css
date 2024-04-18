@@ -1,0 +1,19 @@
+/* footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: bottom;
+
+  border-top: 1px solid var(--grey);
+
+  margin: 1rem 0;
+  padding: 2rem 5rem;
+}
+
+.footer-info-header {
+  margin: 0 0 1rem 0;
+}
+
+.footer-info-email {
+  color: var(--blue);
+}

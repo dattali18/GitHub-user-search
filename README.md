@@ -20,6 +20,9 @@ This app will allow you to search for GitHub users and view their profile inform
 
 ## Installation
 
-1. Clone the repository with `git clone https://github.com/dattali18/GitHub-user-search.git .`
+1. Clone the repository with 
+    ```bash
+    git clone https://github.com/dattali18/GitHub-user-search.git .
+    ```
 2. Run `npm install`
 3. Run `npm start`
