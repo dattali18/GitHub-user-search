@@ -2,9 +2,9 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-import { fetchUserRepos } from "../../api/githubApi";
+import { fetchUserRepos } from "../../api/githubApi.js";
 
-import Repo from "../../components/repo/repo";
+import Repo from "../../components/repo/repo.jsx";
 
 import "./repos.css";
 
@@ -25,7 +25,7 @@ const Repos = () => {
 
   return (
     <div>
-      <h1>{ownerName}&apos;s Repo</h1>
+      <h1>{ownerName}&apos;s Repos</h1>
       <input
         className="search-bar"
         type="text"
