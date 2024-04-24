@@ -1,8 +1,8 @@
 .repo {
   display: flex;
   flex-direction: column;
-  align-items: start;
-  justify-content: flex-start;
+  align-items: flex-start;
+  justify-content: space-between;
 
   flex-wrap: nowrap;
 
@@ -52,4 +52,123 @@
   color: var(--blue);
   /* make the bg-color to be --blue + make opacity less */
   background-color: rgba(3, 102, 214, 0.1);
+}
+
+.repo-language {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.repo-language::before {
+  content: '';
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 0.4rem;
+  align-self: center;
+}
+
+/* Add the appropriate class to the .repo-language element */
+.repo-language.html::before {
+  background-color: #e34c26; /* HTML color */
+}
+
+.repo-language.css::before {
+  background-color: #264de4; /* CSS color */
+}
+
+.repo-language.javascript::before {
+  background-color: #f7df1e; /* JavaScript color */
+}
+
+.repo-language.python::before {
+  background-color: #3572A5; /* Python color */
+}
+
+.repo-language.cpp::before {
+  background-color: #f34b7d; /* C++ color */
+}
+
+.repo-language.csharp::before {
+  background-color: #178600; /* C# color */
+}
+
+.repo-language.c::before {
+  background-color: #555555; /* C color */
+}
+
+.repo-language.java::before {
+  background-color: #b07219; /* Java color */
+}
+
+.repo-language.ruby::before {
+  background-color: #701516; /* Ruby color */
+}
+
+.repo-language.php::before {
+  background-color: #4F5D95; /* PHP color */
+}
+
+.repo-language.swift::before {
+  background-color: #ffac45; /* Swift color */
+}
+
+.repo-language.typescript::before {
+  background-color: #2b7489; /* TypeScript color */
+}
+
+.repo-language.shell::before {
+  background-color: #89e051; /* Shell color */
+}
+
+.repo-language.assembly::before {
+  background-color: #6E4C13; /* Assembly color */
+}
+
+.repo-language.rust::before {
+  background-color: #dea584; /* Rust color */
+}
+
+.repo-language.go::before {
+  background-color: #00ADD8; /* Go color */
+}
+
+.repo-language.kotlin::before {
+  background-color: #F18E33; /* Kotlin color */
+}
+
+.repo-language.haskell::before {
+  background-color: #5e5086; /* Haskell color */
+}
+
+.repo-language.objective-c::before {
+  background-color: #438eff; /* Objective-C color */
+}
+
+/* objective-cpp */
+.repo-language.objective-cpp::before {
+  background-color: #6866fb; /* Objective-C++ color */
+}
+
+.repo-language.scala::before {
+  background-color: #c22d40; /* Scala color */
+}
+
+/* power shell */
+.repo-language.powershell::before {
+  background-color: #012456; /* PowerShell color */
+}
+
+/* Jupyter Notebook */
+.repo-language.jupyter-notebook::before {
+  background-color: #DA5B0B; /* Jupyter Notebook color */
+}
+
+/* Dart */
+.repo-language.dart::before {
+  background-color: #00B4AB; /* Dart color */
 }

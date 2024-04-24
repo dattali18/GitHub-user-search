@@ -46,6 +46,8 @@ const Repos = () => {
             link={repo.html_url}
             topics={repo.topics}
             description={repo.description}
+            language={repo.language}
+            language_class={getLanguageClass(repo.language)}
           />
         ))}
       </div>
@@ -54,3 +56,67 @@ const Repos = () => {
 };
 
 export default Repos;
+
+const getLanguageClass = (language) => {
+  if (!language) return "";
+  switch (language) {
+    case "C":
+      return "c";
+    case "Ruby":
+      return "ruby";
+    case "Rust":
+      return "rust";
+    case "Objective-C":
+      return "objective-c";
+    case "Objective-C++":
+      return "objective-cpp";
+    case "Jupyter Notebook":
+      return "jupyter-notebook";
+    case "Dart":
+      return "dart";
+    case "Perl":
+      return "perl";
+    case "Go":
+      return "go";
+    case "Scala":
+      return "scala";
+    case "Kotlin":
+      return "kotlin";
+    case "Haskell":
+      return "haskell";
+    case "Lua":
+      return "lua";
+    case "R":
+      return "r";
+    case "Shell":
+      return "shell";
+    case "PowerShell":
+      return "powershell";
+    case "Elixir":
+      return "elixir";
+    case "C++":
+      return "cpp";
+    case "Python":
+      return "python";
+    case "JavaScript":
+      return "javascript";
+    case "Java":
+      return "java";
+    case "HTML":
+      return "html";
+    case "CSS":
+      return "css";
+    case "TypeScript":
+      return "typescript";
+    case "Swift":
+      return "swift";
+    case "Assembly":
+      return "assembly";
+    case "C#":
+      return "csharp";
+    case "PHP":
+      return "php";
+    default:
+      return "";
+  }
+};
